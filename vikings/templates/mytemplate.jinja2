@@ -1,0 +1,21 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1><span class="font-semi-bold">Pyramid</span> <span class="smaller">Alchemy project</span></h1>
+  <p class="lead">Welcome to <span class="font-normal">Vikings</span>, a&nbsp;Pyramid application generated&nbsp;by<br><span class="font-normal">Cookiecutter</span>.</p>
+  <p>First Viking to set foot in America: {{person.p_fname}} {{person.p_lname}}</p>
+  <table>
+    <tr>
+    <td><b><em>Today's Vikings</b></em></td>
+    </tr>
+    {% for t in team %}
+    <tr>
+    <td>
+      {{t['firstname']}} {{t['lastname']}}
+    </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock content %}
