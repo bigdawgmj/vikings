@@ -69,3 +69,4 @@ testem.log
 Thumbs.db
 
 *.csv
+*.sqlite
